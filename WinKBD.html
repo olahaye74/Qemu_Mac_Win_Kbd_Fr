@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        svg {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+        }
+        .key {
+            fill: #ffffff;
+            stroke: #000000;
+            stroke-width: 1;
+        }
+        .key-disabled {
+            fill: #cccccc;
+            stroke: #000000;
+            stroke-width: 1;
+        }
+        .key-text {
+            font-size: 12px;
+            text-anchor: middle;
+            dominant-baseline: middle;
+            pointer-events: none;
+        }
+        .highlighted {
+            fill: #ffff99;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>Cliquez sur une touche SVG, puis appuyez sur la touche correspondante au clavier.<br>
+       Cliquez sur "Télécharger" pour obtenir les correspondances.</p>
+    <svg width="2160" height="612" viewBox="0 0 1200 340">
+        <!-- Touches de fonction -->
+        <g id="key_53"><rect class="key" x="10" y="10" width="60" height="40" /><text class="key-text" x="40" y="30">Esc</text></g>
+        <g id="key_3b"><rect class="key" x="70" y="10" width="40" height="40" /><text class="key-text" x="90" y="30">F1</text></g>
+        <g id="key_3c"><rect class="key" x="110" y="10" width="40" height="40" /><text class="key-text" x="130" y="30">F2</text></g>
+        <g id="key_3d"><rect class="key" x="150" y="10" width="40" height="40" /><text class="key-text" x="170" y="30">F3</text></g>
+        <g id="key_3e"><rect class="key" x="190" y="10" width="40" height="40" /><text class="key-text" x="210" y="30">F4</text></g>
+        <g id="key_3f"><rect class="key" x="230" y="10" width="40" height="40" /><text class="key-text" x="250" y="30">F5</text></g>
+        <g id="key_40"><rect class="key" x="270" y="10" width="40" height="40" /><text class="key-text" x="290" y="30">F6</text></g>
+        <g id="key_41"><rect class="key" x="310" y="10" width="40" height="40" /><text class="key-text" x="330" y="30">F7</text></g>
+        <g id="key_42"><rect class="key" x="350" y="10" width="40" height="40" /><text class="key-text" x="370" y="30">F8</text></g>
+        <g id="key_43"><rect class="key" x="390" y="10" width="40" height="40" /><text class="key-text" x="410" y="30">F9</text></g>
+        <g id="key_44"><rect class="key" x="430" y="10" width="40" height="40" /><text class="key-text" x="450" y="30">F10</text></g>
+        <g id="key_57"><rect class="key" x="470" y="10" width="40" height="40" /><text class="key-text" x="490" y="30">F11</text></g>
+        <g id="key_58"><rect class="key" x="510" y="10" width="40" height="40" /><text class="key-text" x="530" y="30">F12</text></g>
+        <g id="touch_id"><rect class="key-disabled" x="550" y="10" width="40" height="40" /><circle cx="570" cy="30" r="10" fill="none" stroke="#000000" stroke-width="1" /><text class="key-text" x="570" y="30">ID</text></g>
+        <!-- Ligne supérieure (chiffres) -->
+        <g id="key_10_top"><rect class="key" x="10" y="60" width="40" height="40" /><text class="key-text" x="30" y="80">@</text></g>
+        <g id="key_18"><rect class="key" x="50" y="60" width="40" height="40" /><text class="key-text" x="70" y="80">&</text></g>
+        <g id="key_19"><rect class="key" x="90" y="60" width="40" height="40" /><text class="key-text" x="110" y="80">é</text></g>
+        <g id="key_4_top"><rect class="key" x="130" y="60" width="40" height="40" /><text class="key-text" x="150" y="80">"</text></g>
+        <g id="key_21"><rect class="key" x="170" y="60" width="40" height="40" /><text class="key-text" x="190" y="80">'</text></g>
+        <g id="key_22"><rect class="key" x="210" y="60" width="40" height="40" /><text class="key-text" x="230" y="80">(</text></g>
+        <g id="key_23"><rect class="key" x="250" y="60" width="40" height="40" /><text class="key-text" x="270" y="80">§</text></g>
+        <g id="key_25"><rect class="key" x="290" y="60" width="40" height="40" /><text class="key-text" x="310" y="80">è</text></g>
+        <g id="key_26"><rect class="key" x="330" y="60" width="40" height="40" /><text class="key-text" x="350" y="80">!</text></g>
+        <g id="key_27"><rect class="key" x="370" y="60" width="40" height="40" /><text class="key-text" x="390" y="80">ç</text></g>
+        <g id="key_29"><rect class="key" x="410" y="60" width="40" height="40" /><text class="key-text" x="430" y="80">à</text></g>
+        <g id="key_28"><rect class="key" x="450" y="60" width="40" height="40" /><text class="key-text" x="470" y="80">)</text></g>
+        <g id="key_12_top"><rect class="key" x="490" y="60" width="40" height="40" /><text class="key-text" x="510" y="80">-</text></g>
+        <g id="key_0e"><rect class="key" x="530" y="60" width="60" height="40" /><text class="key-text" x="560" y="80">Backspace</text></g>
+        <!-- Ligne AZERTY -->
+        <g id="key_0f"><rect class="key" x="10" y="100" width="60" height="40" /><text class="key-text" x="40" y="120">Tab</text></g>
+        <g id="key_12_letter"><rect class="key" x="70" y="100" width="40" height="40" /><text class="key-text" x="90" y="120">a</text></g>
+        <g id="key_13"><rect class="key" x="110" y="100" width="40" height="40" /><text class="key-text" x="130" y="120">z</text></g>
+        <g id="key_14"><rect class="key" x="150" y="100" width="40" height="40" /><text class="key-text" x="170" y="120">e</text></g>
+        <g id="key_15"><rect class="key" x="190" y="100" width="40" height="40" /><text class="key-text" x="210" y="120">r</text></g>
+        <g id="key_17"><rect class="key" x="230" y="100" width="40" height="40" /><text class="key-text" x="250" y="120">t</text></g>
+        <g id="key_16"><rect class="key" x="270" y="100" width="40" height="40" /><text class="key-text" x="290" y="120">y</text></g>
+        <g id="key_18_letter"><rect class="key" x="310" y="100" width="40" height="40" /><text class="key-text" x="330" y="120">u</text></g>
+        <g id="key_19_letter"><rect class="key" x="350" y="100" width="40" height="40" /><text class="key-text" x="370" y="120">i</text></g>
+        <g id="key_20"><rect class="key" x="390" y="100" width="40" height="40" /><text class="key-text" x="410" y="120">o</text></g>
+        <g id="key_35"><rect class="key" x="430" y="100" width="40" height="40" /><text class="key-text" x="450" y="120">p</text></g>
+        <g id="key_24"><rect class="key" x="470" y="100" width="40" height="40" /><text class="key-text" x="490" y="120">^</text></g>
+        <g id="key_30"><rect class="key" x="510" y="100" width="40" height="40" /><text class="key-text" x="530" y="120">$</text></g>
+        <g id="key_36"><path class="key" d="M550 100 H590 V180 H550 V100 Z" /><text class="key-text" x="570" y="120">Enter</text></g>
+        <!-- Ligne QSDF -->
+        <g id="key_3a"><rect class="key" x="10" y="140" width="70" height="40" /><text class="key-text" x="45" y="160">Caps</text></g>
+        <g id="key_0"><rect class="key" x="80" y="140" width="40" height="40" /><text class="key-text" x="100" y="160">q</text></g>
+        <g id="key_1"><rect class="key" x="120" y="140" width="40" height="40" /><text class="key-text" x="140" y="160">s</text></g>
+        <g id="key_2"><rect class="key" x="160" y="140" width="40" height="40" /><text class="key-text" x="180" y="160">d</text></g>
+        <g id="key_3"><rect class="key" x="200" y="140" width="40" height="40" /><text class="key-text" x="220" y="160">f</text></g>
+        <g id="key_5_letter"><rect class="key" x="240" y="140" width="40" height="40" /><text class="key-text" x="260" y="160">g</text></g>
+        <g id="key_4_letter"><rect class="key" x="280" y="140" width="40" height="40" /><text class="key-text" x="300" y="160">h</text></g>
+        <g id="key_6_letter"><rect class="key" x="320" y="140" width="40" height="40" /><text class="key-text" x="340" y="160">j</text></g>
+        <g id="key_7_letter"><rect class="key" x="360" y="140" width="40" height="40" /><text class="key-text" x="380" y="160">k</text></g>
+        <g id="key_8_letter"><rect class="key" x="400" y="140" width="40" height="40" /><text class="key-text" x="420" y="160">l</text></g>
+        <g id="key_9_letter"><rect class="key" x="440" y="140" width="40" height="40" /><text class="key-text" x="460" y="160">m</text></g>
+        <g id="key_39"><rect class="key" x="480" y="140" width="40" height="40" /><text class="key-text" x="500" y="160">ù</text></g>
+        <g id="key_34"><rect class="key" x="520" y="140" width="40" height="40" /><text class="key-text" x="540" y="160">`</text></g>
+        <!-- Ligne <WXC -->
+        <g id="key_2a"><rect class="key" x="10" y="180" width="50" height="40" /><text class="key-text" x="35" y="200">Shift</text></g>
+		<g id="key_50"><rect class="key" x="60" y="180" width="40" height="40" /><text class="key-text" x="80" y="200"><</text></g>
+        <g id="key_11"><rect class="key" x="100" y="180" width="40" height="40" /><text class="key-text" x="120" y="200">w</text></g>
+        <g id="key_10_letter"><rect class="key" x="140" y="180" width="40" height="40" /><text class="key-text" x="160" y="200">x</text></g>
+        <g id="key_8_letter_wxc"><rect class="key" x="180" y="180" width="40" height="40" /><text class="key-text" x="200" y="200">c</text></g>
+        <g id="key_9_letter_wxc"><rect class="key" x="220" y="180" width="40" height="40" /><text class="key-text" x="240" y="200">v</text></g>
+        <g id="key_5_letter_wxc"><rect class="key" x="260" y="180" width="40" height="40" /><text class="key-text" x="280" y="200">b</text></g>
+        <g id="key_7_letter_wxc"><rect class="key" x="300" y="180" width="40" height="40" /><text class="key-text" x="320" y="200">n</text></g>
+        <g id="key_6_letter"><rect class="key" x="340" y="180" width="40" height="40" /><text class="key-text" x="360" y="200">,</text></g>
+        <g id="key_43_letter"><rect class="key" x="380" y="180" width="40" height="40" /><text class="key-text" x="400" y="200">;</text></g>
+        <g id="key_44_letter"><rect class="key" x="420" y="180" width="40" height="40" /><text class="key-text" x="440" y="200">:</text></g>
+        <g id="key_45"><rect class="key" x="460" y="180" width="40" height="40" /><text class="key-text" x="480" y="200">=</text></g>
+        <g id="key_36_right"><rect class="key" x="500" y="180" width="90" height="40" /><text class="key-text" x="545" y="200">Shift</text></g>
+        <!-- Ligne Espace -->
+        <g id="key_63"><rect class="key-disabled" x="10" y="220" width="40" height="40" /><text class="key-text" x="30" y="240">Fn</text></g>
+        <g id="key_59"><rect class="key" x="50" y="220" width="40" height="40" /><text class="key-text" x="70" y="240">Ctrl</text></g>
+        <g id="key_38"><rect class="key" x="90" y="220" width="40" height="40" /><text class="key-text" x="110" y="240">Opt</text></g>
+        <g id="key_55"><rect class="key" x="130" y="220" width="50" height="40" /><text class="key-text" x="155" y="240">Cmd</text></g>
+        <g id="key_49"><rect class="key" x="180" y="220" width="200" height="40" /><text class="key-text" x="280" y="240">Space</text></g>
+        <g id="key_54"><rect class="key" x="380" y="220" width="50" height="40" /><text class="key-text" x="405" y="240">Cmd</text></g>
+        <g id="key_61"><rect class="key" x="430" y="220" width="40" height="40" /><text class="key-text" x="450" y="240">Opt</text></g>
+        <!-- Pavé de flèches -->
+        <g id="key_123"><rect class="key" x="470" y="220" width="40" height="40" /><text class="key-text" x="490" y="240">←</text></g>
+        <g id="key_126"><rect class="key" x="510" y="220" width="40" height="20" /><text class="key-text" x="530" y="230">↑</text></g>
+        <g id="key_125"><rect class="key" x="510" y="240" width="40" height="20" /><text class="key-text" x="530" y="250">↓</text></g>
+        <g id="key_124"><rect class="key" x="550" y="220" width="40" height="40" /><text class="key-text" x="570" y="240">→</text></g>
+    </svg>
+    <button onclick="downloadMappings()">Télécharger les correspondances</button>
+    <table id="keyTable">
+        <thead>
+            <tr>
+                <th>Numéro ISO</th>
+                <th>Code</th>
+                <th>Scan Code</th>
+                <th>Nom VK</th>
+                <th>Texte SVG</th>
+                <th>Caractère Reçu</th>
+                <th>Code Unicode Reçu</th>
+                <th>Code Unicode SVG</th>
+            </tr>
+        </thead>
+        <tbody id="keyTableBody"></tbody>
+    </table>
+
+    <script>
+        // Tableau de mapping des keycodes aux noms VK
+        const vkMap = {
+            8: "VK_BACK", 9: "VK_TAB", 13: "VK_RETURN", 16: "VK_SHIFT", 17: "VK_CONTROL", 18: "VK_MENU",
+            20: "VK_CAPITAL", 27: "VK_ESCAPE", 32: "VK_SPACE", 33: "VK_PRIOR", 34: "VK_NEXT", 35: "VK_END",
+            36: "VK_HOME", 37: "VK_LEFT", 38: "VK_UP", 39: "VK_RIGHT", 40: "VK_DOWN", 46: "VK_DELETE",
+            48: "VK_0", 49: "VK_1", 50: "VK_2", 51: "VK_3", 52: "VK_4", 53: "VK_5", 54: "VK_6",
+            55: "VK_7", 56: "VK_8", 57: "VK_9", 65: "VK_A", 66: "VK_B", 67: "VK_C", 68: "VK_D",
+            69: "VK_E", 70: "VK_F", 71: "VK_G", 72: "VK_H", 73: "VK_I", 74: "VK_J", 75: "VK_K",
+            76: "VK_L", 77: "VK_M", 78: "VK_N", 79: "VK_O", 80: "VK_P", 81: "VK_Q", 82: "VK_R",
+            83: "VK_S", 84: "VK_T", 85: "VK_U", 86: "VK_V", 87: "VK_W", 88: "VK_X", 89: "VK_Y",
+            90: "VK_Z", 186: "VK_OEM_1", 187: "VK_OEM_PLUS", 188: "VK_OEM_COMMA", 189: "VK_OEM_MINUS",
+            190: "VK_OEM_PERIOD", 191: "VK_OEM_2", 192: "VK_OEM_3", 219: "VK_OEM_4", 220: "VK_OEM_5",
+            221: "VK_OEM_6", 222: "VK_OEM_7", 226: "VK_OEM_102", 91: "VK_LWIN", 92: "VK_RWIN",
+            93: "VK_APPS", 112: "VK_F1", 113: "VK_F2", 114: "VK_F3", 115: "VK_F4", 116: "VK_F5",
+            117: "VK_F6", 118: "VK_F7", 119: "VK_F8", 120: "VK_F9", 121: "VK_F10", 122: "VK_F11",
+            123: "VK_F12", 0x12E: "VK_RMENU"
+        };
+
+        // Tableau de correspondance event.code → informations (ISO, scan code, VK, caractères)
+        const scanCodeMap = {
+            // Touches de fonction
+            "Escape": { iso: "53", scanCode: "01", vk: "VK_ESCAPE", char: "Escape", unicode: "Non-imprimable" },
+            "F1": { iso: "3b", scanCode: "3b", vk: "VK_F1", char: "F1", unicode: "Non-imprimable" },
+            "F2": { iso: "3c", scanCode: "3c", vk: "VK_F2", char: "F2", unicode: "Non-imprimable" },
+            "F3": { iso: "3d", scanCode: "3d", vk: "VK_F3", char: "F3", unicode: "Non-imprimable" },
+            "F4": { iso: "3e", scanCode: "3e", vk: "VK_F4", char: "F4", unicode: "Non-imprimable" },
+            "F5": { iso: "3f", scanCode: "3f", vk: "VK_F5", char: "F5", unicode: "Non-imprimable" },
+            "F6": { iso: "40", scanCode: "40", vk: "VK_F6", char: "F6", unicode: "Non-imprimable" },
+            "F7": { iso: "41", scanCode: "41", vk: "VK_F7", char: "F7", unicode: "Non-imprimable" },
+            "F8": { iso: "42", scanCode: "42", vk: "VK_F8", char: "F8", unicode: "Non-imprimable" },
+            "F9": { iso: "43", scanCode: "43", vk: "VK_F9", char: "F9", unicode: "Non-imprimable" },
+            "F10": { iso: "44", scanCode: "44", vk: "VK_F10", char: "F10", unicode: "Non-imprimable" },
+            "F11": { iso: "57", scanCode: "57", vk: "VK_F11", char: "F11", unicode: "Non-imprimable" },
+            "F12": { iso: "58", scanCode: "58", vk: "VK_F12", char: "F12", unicode: "Non-imprimable" },
+            // Ligne supérieure (chiffres)
+            "Backquote": { iso: "10_top", scanCode: "29", vk: "VK_OEM_3", char: "@", unicode: "U+0040" },
+            "Digit1": { iso: "18", scanCode: "02", vk: "VK_1", char: "&", unicode: "U+0026" },
+            "Digit2": { iso: "19", scanCode: "03", vk: "VK_2", char: "é", unicode: "U+00E9" },
+            "Digit3": { iso: "4_top", scanCode: "04", vk: "VK_3", char: "\"", unicode: "U+0022" },
+            "Digit4": { iso: "21", scanCode: "05", vk: "VK_4", char: "'", unicode: "U+0027" },
+            "Digit5": { iso: "22", scanCode: "06", vk: "VK_5", char: "(", unicode: "U+0028" },
+            "Digit6": { iso: "23", scanCode: "07", vk: "VK_6", char: "§", unicode: "U+00A7" },
+            "Digit7": { iso: "25", scanCode: "08", vk: "VK_7", char: "è", unicode: "U+00E8" },
+            "Digit8": { iso: "26", scanCode: "09", vk: "VK_8", char: "!", unicode: "U+0021" },
+            "Digit9": { iso: "27", scanCode: "0a", vk: "VK_9", char: "ç", unicode: "U+00E7" },
+            "Digit0": { iso: "29", scanCode: "0b", vk: "VK_0", char: "à", unicode: "U+00E0" },
+            "Minus": { iso: "28", scanCode: "0d", vk: "VK_OEM_MINUS", char: ")", unicode: "U+0029" },
+            "Equal": { iso: "12_top", scanCode: "0c", vk: "VK_OEM_PLUS", char: "-", unicode: "U+002D" },
+            "Backspace": { iso: "0e", scanCode: "0e", vk: "VK_BACK", char: "Backspace", unicode: "Non-imprimable" },
+            // Ligne AZERTY
+            "Tab": { iso: "0f", scanCode: "0f", vk: "VK_TAB", char: "Tab", unicode: "Non-imprimable" },
+            "KeyQ": { iso: "12_letter", scanCode: "10", vk: "VK_Q", char: "a", unicode: "U+0061" },
+            "KeyW": { iso: "13", scanCode: "11", vk: "VK_W", char: "z", unicode: "U+007A" },
+            "KeyE": { iso: "14", scanCode: "12", vk: "VK_E", char: "e", unicode: "U+0065" },
+            "KeyR": { iso: "15", scanCode: "13", vk: "VK_R", char: "r", unicode: "U+0072" },
+            "KeyT": { iso: "17", scanCode: "14", vk: "VK_T", char: "t", unicode: "U+0074" },
+            "KeyY": { iso: "16", scanCode: "15", vk: "VK_Y", char: "y", unicode: "U+0079" },
+            "KeyU": { iso: "18_letter", scanCode: "16", vk: "VK_U", char: "u", unicode: "U+0069" },
+            "KeyI": { iso: "19_letter", scanCode: "17", vk: "VK_I", char: "i", unicode: "U+0069" },
+            "KeyO": { iso: "20", scanCode: "18", vk: "VK_O", char: "o", unicode: "U+006F" },
+            "KeyP": { iso: "35", scanCode: "19", vk: "VK_P", char: "p", unicode: "U+0070" },
+            "BracketRight": { iso: "24", scanCode: "1a", vk: "VK_OEM_6", char: "^", unicode: "U+005E" },
+            "BracketLeft": { iso: "30", scanCode: "1b", vk: "VK_OEM_1", char: "$", unicode: "U+0024" },
+            "Enter": { iso: "36", scanCode: "1c", vk: "VK_RETURN", char: "Enter", unicode: "Non-imprimable" },
+            // Ligne QSDF
+            "CapsLock": { iso: "3a", scanCode: "3a", vk: "VK_CAPITAL", char: "CapsLock", unicode: "Non-imprimable" },
+            "KeyA": { iso: "0", scanCode: "1e", vk: "VK_A", char: "q", unicode: "U+0071" },
+            "KeyS": { iso: "1", scanCode: "1f", vk: "VK_S", char: "s", unicode: "U+0073" },
+            "KeyD": { iso: "2", scanCode: "20", vk: "VK_D", char: "d", unicode: "U+0064" },
+            "KeyF": { iso: "3", scanCode: "21", vk: "VK_F", char: "f", unicode: "U+0066" },
+            "KeyG": { iso: "5_letter", scanCode: "22", vk: "VK_G", char: "g", unicode: "U+0067" },
+            "KeyH": { iso: "4_letter", scanCode: "23", vk: "VK_H", char: "h", unicode: "U+0068" },
+            "KeyJ": { iso: "6_letter", scanCode: "24", vk: "VK_J", char: "j", unicode: "U+006A" },
+            "KeyK": { iso: "7_letter", scanCode: "25", vk: "VK_K", char: "k", unicode: "U+006B" },
+            "KeyL": { iso: "8_letter", scanCode: "26", vk: "VK_L", char: "l", unicode: "U+006C" },
+            "Semicolon": { iso: "9_letter", scanCode: "27", vk: "VK_M", char: "m", unicode: "U+006D" },
+            "Quote": { iso: "39", scanCode: "28", vk: "VK_OEM_7", char: "ù", unicode: "U+00F9" },
+            "Backslash": { iso: "34", scanCode: "2b", vk: "VK_OEM_5", char: "`", unicode: "U+0060" },
+            // Ligne <WXC
+            "ShiftLeft": { iso: "2a", scanCode: "2a", vk: "VK_LSHIFT", char: "Shift", unicode: "Non-imprimable" },
+            "IntlBackslash": { iso: "50", scanCode: "56", vk: "VK_OEM_102", char: "<", unicode: "U+003C" },
+            "KeyZ": { iso: "11", scanCode: "2c", vk: "VK_Z", char: "w", unicode: "U+0077" },
+            "KeyX": { iso: "10_letter", scanCode: "2e", vk: "VK_X", char: "x", unicode: "U+0078" },
+            "KeyC": { iso: "8_letter_wxc", scanCode: "2f", vk: "VK_C", char: "c", unicode: "U+0063" },
+            "KeyV": { iso: "9_letter_wxc", scanCode: "30", vk: "VK_V", char: "v", unicode: "U+0076" },
+            "KeyB": { iso: "5_letter_wxc", scanCode: "31", vk: "VK_B", char: "b", unicode: "U+0062" },
+            "KeyN": { iso: "7_letter_wxc", scanCode: "32", vk: "VK_N", char: "n", unicode: "U+006E" },
+            "KeyM": { iso: "6_letter", scanCode: "33", vk: "VK_OEM_COMMA", char: ",", unicode: "U+002C" },
+            "Comma": { iso: "43_letter", scanCode: "34", vk: "VK_OEM_PERIOD", char: ";", unicode: "U+003B" },
+            "Period": { iso: "44_letter", scanCode: "35", vk: "VK_OEM_2", char: ":", unicode: "U+003A" },
+            "Slash": { iso: "45", scanCode: "0c", vk: "VK_OEM_PLUS", char: "=", unicode: "U+003D" },
+            "ShiftRight": { iso: "36_right", scanCode: "36", vk: "VK_RSHIFT", char: "Shift", unicode: "Non-imprimable" },
+            // Ligne Espace
+            "ControlLeft": { iso: "59", scanCode: "1d", vk: "VK_CONTROL", char: "Ctrl", unicode: "Non-imprimable" },
+            "AltLeft": { iso: "38", scanCode: "38", vk: "VK_MENU", char: "Opt", unicode: "Non-imprimable" },
+            "MetaLeft": { iso: "55", scanCode: "5b", vk: "VK_LWIN", char: "Cmd", unicode: "Non-imprimable" },
+            "Space": { iso: "49", scanCode: "39", vk: "VK_SPACE", char: " ", unicode: "U+0020" },
+            "MetaRight": { iso: "54", scanCode: "5c", vk: "VK_RWIN", char: "Cmd", unicode: "Non-imprimable" },
+            "AltRight": { iso: "61", scanCode: "5d", vk: "VK_RMENU", char: "Opt", unicode: "Non-imprimable" },
+            // Pavé de flèches
+            "ArrowLeft": { iso: "123", scanCode: "4b", vk: "VK_LEFT", char: "←", unicode: "U+2190" },
+            "ArrowUp": { iso: "126", scanCode: "48", vk: "VK_UP", char: "↑", unicode: "U+2191" },
+            "ArrowDown": { iso: "125", scanCode: "50", vk: "VK_DOWN", char: "↓", unicode: "U+2193" },
+            "ArrowRight": { iso: "124", scanCode: "4d", vk: "VK_RIGHT", char: "→", unicode: "U+2192" }
+        };
+
+        // Tableau pour stocker les correspondances
+        let keyMappings = [];
+        let highlightedKey = null;
+
+        // Fonction pour obtenir le code Unicode
+        function getUnicodeCode(char) {
+            if (!char || char.length !== 1 || char.charCodeAt(0) < 32 || char.charCodeAt(0) === 127) {
+                return "Non-imprimable";
+            }
+            try {
+                return `U+${char.charCodeAt(0).toString(16).toUpperCase().padStart(4, '0')}`;
+            } catch (e) {
+                return "Non-imprimable";
+            }
+        }
+
+        // Fonction pour obtenir les informations de la touche
+        function getKeyInfo(code, key) {
+            const info = scanCodeMap[code] || {
+                iso: "Inconnu",
+                scanCode: "Inconnu",
+                vk: `VK_${(key.charCodeAt(0) || key).toString(16).toUpperCase().padStart(2, '0')}`,
+                char: key,
+                unicode: getUnicodeCode(key)
+            };
+            if (info.iso === "Inconnu") {
+                console.warn(`Code non mappé: ${code}. Veuillez vérifier la touche ou l'émulation QEMU.`);
+            }
+            return info;
+        }
+
+        // Fonction pour obtenir le texte SVG de la touche
+        function getSvgText(keyId) {
+            const keyElement = document.querySelector(`#${keyId} text`);
+            return keyElement ? keyElement.textContent : "Inconnu";
+        }
+
+        // Fonction pour obtenir le code Unicode du texte SVG
+        function getSvgUnicode(keyId) {
+            const svgText = getSvgText(keyId);
+            if (svgText === "Inconnu" || svgText.match(/^(Esc|Tab|Caps|Shift|Ctrl|Opt|Cmd|Enter|Backspace|[←↑↓→])$/)) {
+                return "Non-imprimable";
+            }
+            try {
+                return `U+${svgText.charCodeAt(0).toString(16).toUpperCase().padStart(4, '0')}`;
+            } catch (e) {
+                return "Non-imprimable";
+            }
+        }
+
+        // Ajouter des écouteurs de clic sur les touches SVG (sauf touches grisées)
+        document.querySelectorAll('.key').forEach(key => {
+            key.addEventListener('click', function() {
+                if (highlightedKey) {
+                    highlightedKey.classList.remove('highlighted');
+                }
+                this.classList.add('highlighted');
+                highlightedKey = this;
+            });
+        });
+
+        // Écouteur d'événements clavier
+        document.onkeydown = function(e) {
+            if (!highlightedKey) {
+                return; // Autoriser les comportements par défaut si aucune touche n'est en surbrillance
+            }
+            e.preventDefault();
+
+            const keyInfo = getKeyInfo(e.code, e.key);
+            const isoNumber = highlightedKey.parentNode.id.replace(/^key_/, '').replace(/(_top|_letter|_letter_wxc|_right)$/, '');
+            const svgText = getSvgText(highlightedKey.parentNode.id);
+            const svgUnicode = getSvgUnicode(highlightedKey.parentNode.id);
+
+            // Ajouter la correspondance au tableau
+            keyMappings.push({
+                isoNumber: isoNumber,
+                code: e.code,
+                scanCode: keyInfo.scanCode,
+                vkName: keyInfo.vk,
+                svgText: svgText,
+                character: keyInfo.char,
+                unicode: keyInfo.unicode,
+                svgUnicode: svgUnicode
+            });
+
+            // Ajouter une ligne à la table HTML
+            const tableBody = document.getElementById('keyTableBody');
+            const newRow = tableBody.insertRow();
+            newRow.insertCell(0).textContent = isoNumber;
+            newRow.insertCell(1).textContent = e.code;
+            newRow.insertCell(2).textContent = keyInfo.scanCode;
+            newRow.insertCell(3).textContent = keyInfo.vk;
+            newRow.insertCell(4).textContent = svgText;
+            newRow.insertCell(5).textContent = keyInfo.char;
+            newRow.insertCell(6).textContent = keyInfo.unicode;
+            newRow.insertCell(7).textContent = svgUnicode;
+
+            // Retirer la surbrillance
+            highlightedKey.classList.remove('highlighted');
+            highlightedKey = null;
+
+            // Débogage
+            console.log(`Code: ${e.code}, Key: ${e.key}, KeyCode: ${e.keyCode}, ISO: ${isoNumber}, ScanCode: ${keyInfo.scanCode}, VK: ${keyInfo.vk}`);
+        };
+
+        // Fonction pour télécharger les correspondances
+        function downloadMappings() {
+            let content = "Numéro ISO,Code,Scan Code,Nom VK,Texte SVG,Caractère Reçu,Code Unicode Reçu,Code Unicode SVG\n";
+            keyMappings.forEach(mapping => {
+                content += `${mapping.isoNumber},${mapping.code},${mapping.scanCode},${mapping.vkName},${mapping.svgText},${mapping.character},${mapping.unicode},${mapping.svgUnicode}\n`;
+            });
+            const blob = new Blob([content], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'key_mappings.csv';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
